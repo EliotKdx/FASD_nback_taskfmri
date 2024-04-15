@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on lun. 15 avril 2024 10:08:41
+    on lun. 15 avril 2024 14:48:36
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -107,7 +107,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/volatile/home/ek269553/Documents/InDEV_Fabs/Projects/FAS7/fmri_stim/FASD_nback-main/run_experiment_lastrun.py',
+        originPath='/volatile/home/ek269553/Documents/InDEV_Fabs/Projects/FAS7/fmri_stim/FASD_nback/run_experiment_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -318,7 +318,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     Stimuli = visual.TextStim(win=win, name='Stimuli',
         text='',
         font='Open Sans',
-        pos=(0, 0), height=0.3, wrapWidth=None, ori=0.0, 
+        pos=(0, 0), height=1.0, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
@@ -367,7 +367,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         thisExp.addData('trial.started', globalClock.getTime())
+        Stimuli.setColor(stimulus_color, colorSpace='rgb')
         Stimuli.setText(stimuli)
+        Stimuli.setHeight(stimulus_size)
         # keep track of which components have finished
         trialComponents = [Stimuli]
         for thisComponent in trialComponents:
