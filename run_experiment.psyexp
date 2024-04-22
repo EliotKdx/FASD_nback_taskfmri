@@ -159,7 +159,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Open Sans" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.15" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.10" valType="num" updates="constant" name="letterHeight"/>
         <Param val="wait_for_trigger" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>

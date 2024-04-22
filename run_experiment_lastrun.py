@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on mar. 16 avril 2024 16:21:06
+    on lun. 22 avril 2024 09:19:05
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -340,7 +340,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     wait_for_trigger = visual.TextStim(win=win, name='wait_for_trigger',
         text='Wait for trigger',
         font='Open Sans',
-        pos=(0, 0), height=0.15, wrapWidth=None, ori=0.0, 
+        pos=(0, 0), height=0.1, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
